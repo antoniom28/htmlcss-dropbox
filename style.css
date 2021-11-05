@@ -9,6 +9,7 @@ nav{
     width: 100vw;
     height: 10vh;
     overflow: hidden;
+    z-index: 1;
 }
 nav ul{
     list-style: none;
