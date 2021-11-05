@@ -6,8 +6,9 @@
 nav{
     position: fixed;
     background-color: white;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
+    overflow: hidden;
 }
 nav ul{
     list-style: none;
@@ -15,28 +16,28 @@ nav ul{
 }
 .menusinistra a{
     float:left;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 .menudestra a{
     float:right;
-    padding-left: 10px;
+    padding-left: 30px;
 }
 .menusinistra{
-    width: 50%;
+    width: 50vw;
     height: 100%;
     position: absolute;
     top:0;
-    left:0;
-    background-color: red;
+    left:1vw;
+    /*background-color: red;*/
 }
 
 .menudestra{
-    width: 50%;
+    width: 50vw;
     height: 100%;
     position: absolute;
     top:0;
-    right:0;
-    background-color: red;
+    right:2vw;
+    /*background-color: red;*/
 }
 
 nav a{
@@ -47,4 +48,42 @@ a.logo{
 }
 .logo img{
     vertical-align: middle;
+}
+
+
+
+/* ----- SEZIONE 1 -----*/
+.sezione1{
+    background-color: skyblue;
+    height: 85vh;
+    position: relative;
+    top:10vh;
+}
+
+.sezione1 div.immagine{
+    position: relative;
+    left: 457px;
+    top: 240px;
+    width: 50vw;
+    height: 56vh;
+}
+
+.sezione1 div.immagine img{
+    height: 56vh;
+}
+
+.sezione1 div.titolo{
+    position: absolute;
+    top: 8vh;
+    left: 8vw;
+    font-size: 45px;
+    width: 75vw;
+}
+
+.sezione1 div.testo{
+    position: absolute;
+    width: 24%;
+    height: 55%;
+    top: 235px;
+    left: 114px;
 }
