@@ -183,42 +183,42 @@ span.team::before{
     color: black;
 }
 
-.colonna1 span.utente::before{
+.piano .colonna1 span.utente::before{
     content:"\f0c0   ";
     white-space: pre;
     font-family: FontAwesome;
     color: black;
 }
-.colonna2 span.utente::before,
-.colonna3 span.utente::before{
+.piano .colonna2 span.utente::before,
+.piano .colonna3 span.utente::before{
     content:"\f234   ";
     white-space: pre;
     font-family: FontAwesome;
     color: black;
 }
 
-.colonna3 span.memoria::before{
+.piano .colonna3 span.memoria::before{
     content:"\f118   ";
     white-space: pre;
     font-family: FontAwesome;
     color: black;
 }
-.colonna1 span.memoria::before,
-.colonna2 span.memoria::before{
+.piano .colonna1 span.memoria::before,
+.piano .colonna2 span.memoria::before{
     content:"\f07b   ";
     white-space: pre;
     font-family: FontAwesome;
     color: black;
 }
 
-.colonna2 span.funzioni::before{
+.piano .colonna2 span.funzioni::before{
     content:"\f118   ";
     white-space: pre;
     font-family: FontAwesome;
     color: black;
 }
-.colonna1 span.funzioni::before,
-.colonna3 span.funzioni::before{
+.piano .colonna1 span.funzioni::before,
+.piano .colonna3 span.funzioni::before{
     content:"\f040   ";
     white-space: pre;
     font-family: FontAwesome;
@@ -239,34 +239,34 @@ span.mensile{
     color: grey;
 }
 
-.colonna1,
-.colonna2,
-.colonna3{
+.piano .colonna1,
+.piano .colonna2,
+.piano .colonna3{
     border:1px solid grey;
     overflow: auto;
 }
 
-.colonna1 div,
-.colonna2 div,
-.colonna3 div{
+.piano .colonna1 div,
+.piano .colonna2 div,
+.piano .colonna3 div{
     width: 100%;
     padding:0 5%;
     margin-bottom: 10%;
 }
 
-.colonna4{
+.piano .colonna4{
     float: left;
     border: 1px solid grey;
     margin: 8% 0;
     width: 100%;
 }
 
-.colonna4 div.testo{
+.piano .colonna4 div.testo{
     width: 70%;
     float:left;
     line-height: 2;
 }
-.colonna4 div.link{
+.piano .colonna4 div.link{
     width: 30%;
     float:right;
     margin-top:2%
@@ -275,7 +275,7 @@ span.mensile{
 div.provagratis a.inizia{
     padding: 10px 10px;
 }
-.colonna4 div.link a.inizia{
+.piano .colonna4 div.link a.inizia{
     padding: 10px 15%;
 }
 
@@ -288,17 +288,17 @@ div.puntisalienti span::before{
     color: rgb(38, 125, 224);
 }
 
-.colonna1 span,
-.colonna2 span,
-.colonna3 span,
-.colonna4 span,
-.colonna1 h2,
-.colonna2 h2,
-.colonna3 h2,
-.colonna4 h2,
-.colonna1 h3,
-.colonna2 h3,
-.colonna3 h3{
+.piano .colonna1 span,
+.piano .colonna2 span,
+.piano .colonna3 span,
+.piano .colonna4 span,
+.piano .colonna1 h2,
+.piano .colonna2 h2,
+.piano .colonna3 h2,
+.piano .colonna4 h2,
+.piano .colonna1 h3,
+.piano .colonna2 h3,
+.piano .colonna3 h3{
     padding: 10px 0px;
 }
 
@@ -322,7 +322,8 @@ div.provagratis span span{
     padding-bottom: 28px;    
 }
 
-/**/
+/* -------- SEZIONE 3 --------*/
+/* -------- SEZIONE 3 --------*/
 
 .sezione3 {
     height: 80vh;
@@ -361,4 +362,52 @@ div.provagratis span span{
     border:1px solid black;
     padding:7px 5%;
     display: inline-block;
+}
+
+/* -------- SEZIONE 4 --------*/
+/* -------- SEZIONE 4 --------*/
+
+
+
+.sezione4{
+    /*background-color: rgb(38, 125, 224);*/
+    position: relative;
+    top: 30vh;
+    width: 84%;
+    left: 8%;
+    overflow: hidden;
+}
+.sezione4 h3{
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+.sezione4 h2{
+    font-size: 49px;
+}
+
+.sezione4 .colonna1,
+.sezione4 .colonna2,
+.sezione4 .colonna3{
+    /*background-color: salmon;*/
+    width: 28%;
+    float:left;
+    overflow: hidden;    
+    margin-top:5%;
+}
+
+.sezione4 .colonna1 .riga1,
+.sezione4 .colonna1 .riga2,
+.sezione4 .colonna2 .riga1,
+.sezione4 .colonna2 .riga2,
+.sezione4 .colonna3 .riga1,
+.sezione4 .colonna3 .riga2{    
+    /*background-color: seagreen;*/
+    overflow: hidden;
+    margin-bottom: 15%;
+}
+
+.sezione4 .colonna1 img,
+.sezione4 .colonna2 img,
+.sezione4 .colonna3 img{
+    width: 100%;
 }
