@@ -122,7 +122,7 @@ a.freccia{
 /* -------- SEZIONE 2 --------*/
 
 .sezione2{
-    height: 100vh;
+    height: 200vh;
     position: relative;
     top:20vh;
 }
@@ -153,7 +153,7 @@ div.colonna2{
 
 .sezione2 div.piano{
     width: 84%;
-    margin: 5% 8%;
+    margin: 0% 8%;
 }
 
 .colonna1 span,
@@ -254,9 +254,31 @@ span.mensile{
     margin-bottom: 10%;
 }
 
+.colonna4{
+    float: left;
+    border: 1px solid grey;
+    margin: 8% 0;
+    width: 100%;
+}
+
+.colonna4 div.testo{
+    width: 70%;
+    float:left;
+    line-height: 2;
+}
+.colonna4 div.link{
+    width: 30%;
+    float:right;
+    margin-top:2%
+}
+
 div.provagratis a.inizia{
     padding: 10px 10px;
 }
+.colonna4 div.link a.inizia{
+    padding: 10px 15%;
+}
+
 
 
 div.puntisalienti span::before{
@@ -269,9 +291,11 @@ div.puntisalienti span::before{
 .colonna1 span,
 .colonna2 span,
 .colonna3 span,
+.colonna4 span,
 .colonna1 h2,
 .colonna2 h2,
 .colonna3 h2,
+.colonna4 h2,
 .colonna1 h3,
 .colonna2 h3,
 .colonna3 h3{
@@ -296,4 +320,45 @@ div.provagratis span a:hover{
 div.provagratis span span{
     border-bottom: 1px solid gray;
     padding-bottom: 28px;    
+}
+
+/**/
+
+.sezione3 {
+    height: 80vh;
+    position: relative;
+    top: 20vh;
+    width: 84%;
+    left: 8%;
+}
+
+.sezione3 div.testo{
+    position: relative;
+    top:10%;
+    float:right;
+    width: 40%;
+}
+.sezione3 div img{
+    width: 100%;
+    height: 100%;
+}
+.sezione3 div.immagine{
+    height: 100%;
+    width: 55%;
+}
+
+.sezione3 div.testo p{
+    padding:5% 0;
+}
+.sezione3 div.testo h2{
+    
+    font-size:30px;
+}
+.sezione3 div.testo a{
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    border:1px solid black;
+    padding:7px 5%;
+    display: inline-block;
 }
