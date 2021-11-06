@@ -367,8 +367,6 @@ div.provagratis span span{
 /* -------- SEZIONE 4 --------*/
 /* -------- SEZIONE 4 --------*/
 
-
-
 .sezione4{
     /*background-color: rgb(38, 125, 224);*/
     position: relative;
@@ -410,4 +408,159 @@ div.provagratis span span{
 .sezione4 .colonna2 img,
 .sezione4 .colonna3 img{
     width: 100%;
+}
+
+/* -------- SEZIONE 5 --------*/
+/* -------- SEZIONE 5 --------*/
+
+.sezione5{
+    /*background-color: rgb(38, 125, 224);*/
+    height: 100vh;
+    position: relative;
+    top: 25vh;
+    overflow: hidden;
+}
+.sezione5 div.testo h2{
+    font-size: 49px;
+    padding-top:5%;
+    margin-bottom:5%
+}
+
+.sezione5 div.testo{
+    max-width: 780px;
+    height: 40%;
+}
+
+.sezione5 div.immagini{
+    height: 60%;
+}
+
+.sezione5 div.sinistra,
+.sezione5 div.destra{
+    background-color: seagreen;
+    width: 30%;
+    height: 100%;
+}
+
+.sezione5 div.sinistra{
+    float: left;
+    position: relative;
+}
+
+.sezione5 div.destra{
+    float: right;
+    position: relative;
+}
+
+.sezione5 div.centro{
+    background-color: whitesmoke;
+    float:left;
+    width: 40%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.sezione5 div.centro div.testo{
+    height: 65%;
+}
+
+.sezione5 div.sinistra div,
+.sezione5 div.destra div{
+    background-color: slateblue;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+}
+
+.sezione5 div.sinistra div.quadrato1{
+    background-color: green;
+    top:0;
+    left:0;
+}
+.sezione5 div.sinistra div.quadrato2{
+    background-color: brown;
+    top:0;
+    right:0;
+}
+.sezione5 div.sinistra div.quadrato3{
+    background-color: rgb(49, 165, 211);
+    bottom:0;
+    left:0;
+}
+.sezione5 div.sinistra div.quadrato4{
+    background-color: red;
+    bottom:0;
+    right:0;
+}
+
+.sezione5 div.destra div.quadrato1{
+    background-color: red;
+    top:0;
+    left:0;
+}
+.sezione5 div.destra div.quadrato2{
+    background-color: skyblue;
+    top:0;
+    right:0;
+}
+.sezione5 div.destra div.quadrato3{
+    background-color: blue;
+    bottom:0;
+    left:0;
+}
+.sezione5 div.destra div.quadrato4{
+    background-color: yellow;
+    bottom:0;
+    right:0;
+}
+
+.sezione5 div.sinistra img,
+.sezione5 div.destra img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sezione5 .centro div{
+    margin-left: 5%;
+}
+.sezione5 .centro div.logo{
+    margin:8% 0 8% 5%;
+    width: 25%;
+    position: relative;
+}
+
+.sezione5 .centro div.logo::after{
+content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  border-bottom: 1px solid gray;
+}
+
+.sezione5 .centro div.logo img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 25%;
+}
+
+.sezione5 .centro div.testo p{
+    padding:5% 0;
+}
+
+/*bordo colorato su hover dei quadrati*/
+
+.sezione5 .immagini .sinistra a:focus::after,
+.sezione5 .immagini .destra a:hover::after{
+    content: "";
+    height: 94%;
+    width: 94%;
+    left: 0;
+    top: 0;
+    border: 6px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    z-index: 40;
 }
