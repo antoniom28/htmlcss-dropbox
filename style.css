@@ -9,7 +9,7 @@ nav{
     width: 100vw;
     height: 10vh;
     overflow: hidden;
-    z-index: 1;
+    z-index: 100;
 }
 nav ul{
     list-style: none;
@@ -122,7 +122,6 @@ a.freccia{
 /* -------- SEZIONE 2 --------*/
 
 .sezione2{
-    background-color:whitesmoke;
     height: 100vh;
     position: relative;
     top:20vh;
@@ -130,6 +129,7 @@ a.freccia{
 
 .sezione2 h1{
     font-size: 50px;
+    margin-bottom: 3%;
 }
 
 .sezione2 div.seleziona{
@@ -143,19 +143,157 @@ div.colonna2{
     margin:0 8%;
 }
 
-.piano div{
-    background-color: skyblue;
+.piano div.colonna1,
+.piano div.colonna2,
+.piano div.colonna3{
+    /*background-color: skyblue;*/
     float:left;
     width: 28%;
-    height: 100%;
 }
 
 .sezione2 div.piano{
     width: 84%;
-    margin: 0 8%;
-    height: 88%;
+    margin: 5% 8%;
 }
 
-.piano span{
+.colonna1 span,
+.colonna2 span,
+.colonna3 span{
+    display:block;
+    text-align:left;
+}
+span.utenti,
+span.team{
+    display:block;
     text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+/* -------- ICONE -------- */
+span.utenti::before{
+    content:"\f007   ";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: black;
+}
+span.team::before{
+    content:"\f0c0   ";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: black;
+}
+
+.colonna1 span.utente::before{
+    content:"\f0c0   ";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: black;
+}
+.colonna2 span.utente::before,
+.colonna3 span.utente::before{
+    content:"\f234   ";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: black;
+}
+
+.colonna3 span.memoria::before{
+    content:"\f118   ";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: black;
+}
+.colonna1 span.memoria::before,
+.colonna2 span.memoria::before{
+    content:"\f07b   ";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: black;
+}
+
+.colonna2 span.funzioni::before{
+    content:"\f118   ";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: black;
+}
+.colonna1 span.funzioni::before,
+.colonna3 span.funzioni::before{
+    content:"\f040   ";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: black;
+}
+/* -------- FINE-ICONE -------- */
+
+span.prezzo{
+    font-weight: bold;
+}
+span.prezzo::after{
+    content:"\f153";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: black;
+}
+span.mensile{
+    color: grey;
+}
+
+.colonna1,
+.colonna2,
+.colonna3{
+    border:1px solid grey;
+    overflow: auto;
+}
+
+.colonna1 div,
+.colonna2 div,
+.colonna3 div{
+    width: 100%;
+    padding:0 5%;
+    margin-bottom: 10%;
+}
+
+div.provagratis a.inizia{
+    padding: 10px 10px;
+}
+
+
+div.puntisalienti span::before{
+    content:"\f00c  ";
+    white-space: pre;
+    font-family: FontAwesome;
+    color: rgb(38, 125, 224);
+}
+
+.colonna1 span,
+.colonna2 span,
+.colonna3 span,
+.colonna1 h2,
+.colonna2 h2,
+.colonna3 h2,
+.colonna1 h3,
+.colonna2 h3,
+.colonna3 h3{
+    padding: 10px 0px;
+}
+
+div.puntisalienti span{
+    display: inline-block;
+}
+
+div.provagratis span a{
+    color:skyblue
+}
+div.provagratis span{
+    display: inline-block;
+}
+
+div.provagratis span a:hover{
+    color: blue;
+}
+
+div.provagratis span span{
+    border-bottom: 1px solid gray;
+    padding-bottom: 28px;    
 }
