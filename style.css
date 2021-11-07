@@ -478,7 +478,7 @@ div.provagratis span span{
     left:0;
 }
 .sezione5 div.sinistra div.quadrato2{
-    background-color: brown;
+    background-color: rgb(94, 0, 0);
     top:0;
     right:0;
 }
@@ -509,7 +509,7 @@ div.provagratis span span{
     left:0;
 }
 .sezione5 div.destra div.quadrato4{
-    background-color: yellow;
+    background-color: #9dad00;
     bottom:0;
     right:0;
 }
@@ -546,6 +546,10 @@ content: "";
     width: 100%;
     margin-bottom: 25%;
 }
+.sezione5 .sinistra img,
+.sezione5 .destra img{
+    filter: invert(1);
+}
 
 .sezione5 .centro div.testo p{
     padding:5% 0;
@@ -553,14 +557,36 @@ content: "";
 
 /*bordo colorato su hover dei quadrati*/
 
-.sezione5 .immagini .sinistra a:focus::after,
+.sezione5 .immagini .sinistra a:hover:focus::after,
+.sezione5 .immagini .destra a:hover:focus::after{
+    content: "";
+    height: 94%;
+    width: 94%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border: 6px solid rgba(255, 255, 255, 0.9);
+    filter: blur(3px);
+}
+
+.sezione5 .immagini .sinistra a:hover::after,
 .sezione5 .immagini .destra a:hover::after{
     content: "";
     height: 94%;
     width: 94%;
     left: 0;
     top: 0;
-    border: 6px solid rgba(255, 255, 255, 0.5);
+    
+    border: 6px solid rgba(255, 255, 255, 0.4);
+
     position: absolute;
-    z-index: 40;
+}
+
+
+.sezione5 div.immagini div.sinistra a::after,
+.sezione5 div.immagini div.destra a::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
 }
