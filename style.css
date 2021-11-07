@@ -457,7 +457,7 @@ div.provagratis span span{
     float:left;
     width: 40%;
     height: 100%;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .sezione5 div.centro div.testo{
