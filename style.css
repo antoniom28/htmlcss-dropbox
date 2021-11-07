@@ -418,7 +418,6 @@ div.provagratis span span{
     height: 100vh;
     position: relative;
     top: 25vh;
-    overflow: hidden;
 }
 .sezione5 div.testo h2{
     font-size: 49px;
@@ -429,6 +428,7 @@ div.provagratis span span{
 .sezione5 div.testo{
     max-width: 780px;
     height: 40%;
+    margin:0 15%;
 }
 
 .sezione5 div.immagini{
@@ -478,7 +478,7 @@ div.provagratis span span{
     left:0;
 }
 .sezione5 div.sinistra div.quadrato2{
-    background-color: rgb(94, 0, 0);
+    background-color: #61082b;
     top:0;
     right:0;
 }
@@ -589,4 +589,40 @@ content: "";
     width: 100%;
     height: 100%;
     content: "";
+}
+
+
+/* -------- SEZIONE 6 --------*/
+/* -------- SEZIONE 6 --------*/
+
+.sezione6{
+    background-color:#b4d0e7;
+    height: 50vh;
+    position: relative;
+    top: 0;
+}
+
+.sezione6 div.titolo h2{
+    font-size:49px;
+    color:#61082b;
+}
+
+.sezione6 div.link a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 50px;
+}
+
+.sezione6 div.titolo {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    width: 40%;
+}
+
+.sezione6 div.link {
+    position: absolute;
+    top: 35%;
+    right: 18%;
 }
