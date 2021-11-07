@@ -56,7 +56,8 @@ a:hover{
 a.inizia{
     color:white;
     background-color: #0061ff;
-    padding: 0px 12px;
+    padding: 10px 12px;
+    margin-top: -10px;
     display: inline-block;
     text-decoration: none;
 }
@@ -461,7 +462,7 @@ div.provagratis span span{
 }
 
 .sezione5 div.centro div.testo{
-    height: 65%;
+    height: 58%;
 }
 
 .sezione5 div.sinistra div,
@@ -599,7 +600,7 @@ content: "";
     background-color:#b4d0e7;
     height: 50vh;
     position: relative;
-    top: 0;
+    top: 25vh;
 }
 
 .sezione6 div.titolo h2{
@@ -625,4 +626,141 @@ content: "";
     position: absolute;
     top: 35%;
     right: 18%;
+}
+
+/* -------- SEZIONE 7 --------*/
+/* -------- SEZIONE 7 --------*/
+
+.sezione7{
+    /*background-color:#16b6a1;*/
+    height: 90vh;
+    width: 84%;
+    position: relative;
+    top: 30vh;
+    left: 8%;
+}
+.sezione7 h2{
+    font-size:39px;
+}
+
+.sezione7 div.domande{
+    margin-top: 5%;
+}
+
+.sezione7 div.domande div{
+    /*background-color: chartreuse;*/
+    padding:30px 0;
+}
+
+.sezione7 div.domande .riga1{
+    border:1px solid gray;
+    border-left: 0;
+    border-right: 0;
+}
+
+.sezione7 div.domande .riga2,
+.sezione7 div.domande .riga4,
+.sezione7 div.domande .riga3{
+    border-bottom:1px solid gray;
+}
+
+.sezione7 div.domande h4 {
+    display: inline-block;
+}
+.sezione7 div.domande div.riga1::after,
+.sezione7 div.domande div.riga2::after,
+.sezione7 div.domande div.riga3::after,
+.sezione7 div.domande div.riga4::after{
+    content: "\f078";
+    font-family:FontAwesome;
+    margin-right: 5%;
+    float: right;
+}
+
+.sezione7 div.domande div.risposta-nascosta{
+    display: none;
+}
+
+.sezione7 .domande div.riga2:hover div.risposta-nascosta{
+    display: inline-block;
+    height: 100px;
+    /*background-color: rgb(65, 64, 64);*/
+}
+
+.sezione7 .domande div.riga1:hover div.risposta-nascosta,
+.sezione7 .domande div.riga3:hover div.risposta-nascosta,
+.sezione7 .domande div.riga4:hover div.risposta-nascosta{
+    display: inline-block;
+    height: 100px;
+    /*background-color: red;*/
+}
+
+.sezione7 div.domande div.risposta-nascosta {
+    width: 50%;
+}
+
+/* -------- SEZIONE 8 --------*/
+/* -------- SEZIONE 8 --------*/
+
+.sezione8{
+    background-color:black;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    top: 25vh;
+    color: white;
+}
+
+.sezione8 li{
+    float:left;
+    list-style: none;
+    margin-right:70px;
+    line-height: 2;
+}
+
+.sezione8 li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.sezione8 ul{
+    padding: 5% 10%;
+}
+
+.sezione8 li h3{
+    font-size:20px;
+    margin:10px 0;
+}
+
+.sezione8 .footer span{
+    border-top: 1px solid grey;
+    padding: 5% 0;
+    padding-right: 40px;
+}
+.sezione8 .footer span::before{
+    content: "\f0ac  ";
+    font-family: FontAwesome;
+    white-space: pre;
+}
+
+.sezione8 .footer span::after{
+    content: " \f0d8";
+    font-family: FontAwesome;
+    white-space: pre;
+}
+
+.sezione8 div.footermenu{
+    height: 70%;
+}
+
+.sezione8 div.footer{
+    height: 15%;
+    width: 80%;
+    margin:5% 10%;
+    color:gray;
+}
+
+a.freccia:focus{
+    background-color: red;
 }
